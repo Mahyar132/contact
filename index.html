@@ -91,6 +91,10 @@
                 white-space: nowrap;
             }
 
+            nav a:visited {
+                color: var(--dim);
+            }
+
             nav a:hover {
                 color: var(--text);
                 border-color: #3a404b;
@@ -99,6 +103,10 @@
             nav a.active {
                 background: #007bff;
                 border-color: #007bff;
+                color: #fff;
+            }
+
+            nav a.active:visited {
                 color: #fff;
             }
 
@@ -125,8 +133,12 @@
             }
 
             .contact a {
-                color: var(--text);
+                color: #00aff0;
                 text-decoration: none;
+            }
+
+            .contact a:visited {
+                color: #00aff0;
             }
 
             .contact a:hover {
@@ -163,6 +175,14 @@
                 height: 1px;
                 margin: 14px 0;
                 background: var(--line);
+            }
+
+            footer a {
+                color: #00aff0;
+            }
+
+            footer a:visited {
+                color: #00aff0;
             }
 
             @media (max-width: 700px) {
@@ -220,30 +240,41 @@
             <div class="contact">
                 <div>
                     <span class="label">Email</span>
-                    <a href="mailto:mahyarprojects@proton.me"> mahyarprojects@proton.me </a>
+                    <a href="mailto:mahyarprojects@proton.me">mahyarprojects@proton.me</a>
                 </div>
 
                 <div>
                     <span class="label">GitHub</span>
-                    <a href="https://github.com/gamma984"> github.com/gamma984 </a>
+                    <a href="https://github.com/gamma984">github.com/gamma984</a>
                 </div>
 
                 <div>
-                    <span class="label">Patreon</span>
-                    <span> Coming soon. Not great, not terrible </span>
+                    <span class="label">GitHub</span>
+                    <a href="https://github.com/Mahyar132">github.com/Mahyar132</a>
+                </div>
+
+                <div>
+                    <span class="label">BlueSky</span>
+                    <a href="https://bsky.app/profile/mahyar67.bsky.social">bsky.app/@mahyar67.bsky.social</a>
                 </div>
             </div>
         </main>
 
         <footer>
             <div class="footer-grid">
-                <span> Mahyar </span>
-                <span> Under Development </span>
+                <span>Mahyar</span>
+                <span>Under Development</span>
             </div>
 
             <div class="footer-line"></div>
 
             Copyright © 2026 - <span id="year"></span> Mahyar Projects
+
+            <p>
+                This site is open source and licensed under the
+                <a href="https://opensource.org/license/mit">MIT License</a>.
+                <a href="https://github.com/Mahyar132/contact">Improve this page</a>.
+            </p>
         </footer>
 
         <script>
